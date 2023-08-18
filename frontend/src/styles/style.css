@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: montserrat,sans-serif;*/
+    font-weight: 800 !important;
+    color: white;
+    /*font-size: 0;*/
+    line-height: normal !important;
+}
+
+body {
+    background-color: teal !important;
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    /*overflow: hidden;*/
+}
+
+/* -------------------- Common Style -------------------- */
+
+.center {
+    text-align: center;
+    font-size: 35px;
+}
+
+.text_div {
+    text-align: center;
+    margin: auto;
+    min-width: 43%;
+    min-height: 50%;
+}
+
+.text_div p {
+    line-height: 2;
+    font-size: 20px;
+}
+
+.hyperlink_color a {
+    color: blue;
+}
+
+.page_title {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 2vh;
+}
+
+/* -------------------- Ad Style -------------------- */
+
+.ad_section {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    margin: 1vh auto auto;
+    text-align: center;
+    /*background-color: red;*/
+}
+
+.ad_div {
+    /*text-align: center;*/
+    width: 100%;
+    /*height: 75.5vh;*/
+    /*height: 100%;*/
+    line-height: 1.5;
+    /*background-color: rgb(49, 49, 49);*/
+    padding: 15px;
+    font-size: 20px;
+    /*position: absolute;*/
+}
+
+.ad_div p a {
+    color: blue;
+}
+
+.flex_ad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    /*overflow: scroll;*/
+    margin-top: 3vh;
+    position: relative;
+}
+
+.flex_ad a {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.flex_ad a img {
+
+}
+
+.premium {
+    color: goldenrod;
+    text-shadow: 0 0 15px gold;
+}
+
+.premium a {
+    text-shadow: 0 0 15px blue;
+}
+
+/* -------------------- AdBlocker Style -------------------- */
+.block_text {
+    display: none;
+    font-size: 25px;
+    text-shadow: 0 0 10px red;
+    color: red;
+    transition: all 0.3s ease;
+    margin: auto;
+    text-align: center;
+}
+
+.block_text_active {
+    display: block;
+}
+
+/* -------------------- Sections Style -------------------- */
+
+.default_section {
+    width: 95%;
+    height: 70vh;
+    margin: 5vh auto auto;
+}
+
+.index_section {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.index_section a {
+    color: blue;
+}
+
+.index_section p {
+    font-size: 20px;
+    color: white;
+}
+
+/* -------------------- Style -------------------- */
+/* -------------------- Style -------------------- */
+/* -------------------- Style -------------------- */
+/* -------------------- Style -------------------- */
+
+/* -------------------- RWD Style -------------------- */
+@media screen and (max-width: 440px) {
+    .mobile_info {
+        display: block;
+    }
+}
