@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta lang="pl-PL">
+  <meta name="description" content="klipcio.tk">
+  <meta name="author" content="PFilip">
+  <meta name="creator" content="klipcio.tk">
+  <meta name="publisher" content="PFilip Tech">
+  <meta name="generator" content="Microsoft Visual Studio Code">
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
+  <title>klipcio.tk - Live</title>
+<!--  <link rel="stylesheet" href="../css/style.css">-->
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/live.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+<!--  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />-->
+  <link href="../js/video-js-7.17.0/video-js.css" rel="stylesheet" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z73D8JBGY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z73D8JBGY3');
+    gtag('config', 'AW-307893015');
+  </script>
+</head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Strona główna</a></li>
+        <li class="nav_dropdown"><p>Reklamy</p>
+          <ul class="nav_dropdown-content">
+            <li><a href="../reklamy/bots.html">Botów</a></li>
+            <li><a href="../reklamy/sites.html">Stron</a></li>
+            <li><a href="../reklamy/servers.html">Serwerów</a></li>
+            <li><a href="../reklamy/banners.html">Bannery</a></li>
+          </ul></li>
+        <li><a href="../about.html">O Nas</a></li>
+      </ul>
+      <a href="../sites/idk.html"><h1 class="nav_logo" data-text="K.TK">K.TK</h1></a>
+    </nav>
+
+    <video
+            id="my-video"
+            class="video-js video-js-style-css"
+            controls
+            preload="auto"
+            width="1280"
+            height="720"
+            data-setup="{}"
+    >
+<!--      <source src="MY_VIDEO.mp4" type="video/mp4" />-->
+<!--      <source src="MY_VIDEO.webm" type="video/webm" />-->
+      <source src="https://pgk.unitedkp.me/hls/klipcio.m3u8" type="application/vnd.apple.mpegurl" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+        >
+      </p>
+    </video>
+
+<!--    <script type=module src="https://vjs.zencdn.net/7.17.0/video.js"></script>-->
+    <script src="../js/video-js-7.17.0/video.min.js"></script>
+<!--    <script src="../js/script.js" type="text/javascript"></script>-->
+  </body>
+</html>
