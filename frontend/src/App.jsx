@@ -5,12 +5,7 @@ import {
     RouterProvider
 } from 'react-router-dom';
 import './styles/style.css';
-import Home from './pages/Home';
-import Bots from './pages/ads/Bots';
-import Sites from './pages/ads/Sites';
-import Servers from './pages/ads/Servers';
-import Banners from './pages/ads/Banners';
-import NotFound from './pages/404';
+import { Banners, Bots, Home, NotFound, Servers, Sites } from './pages';
 import { Layout } from './components/UI/Layout';
 
 const router = createBrowserRouter(
