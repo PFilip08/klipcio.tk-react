@@ -1,0 +1,38 @@
+require('dotenv').config()
+const express = require('express');
+const { PrismaClient } = require('@prisma/client')
+const app = express();
+
+const prisma = new PrismaClient()
+// prisma.on('error', (error) => console.error(error));
+// prisma.once('open', () => console.error("MongoDB Connected."));
+
+app.use(express.json());
+
+const reklamiesRouter =  require('./routes/reklamies');
+app.use('/api/reklamies', reklamiesRouter)
+
+async function main() {
+    // ... you will write your Prisma Client queries here
+    // await prisma.bots.create({
+    //     data: {
+    //         description: 'test',
+    //         name: 'grzybkurdeno',
+    //         premium: false,
+    //         url: 'https://klipcio.eu',
+    //         user: '123456789123465789'
+    //     }
+    // })
+    const allUsers = await prisma.bots.findMany()
+    console.log(allUsers)
+}
+main()
+    .then(async () => {
+        await prisma.$disconnect()
+    })
+    .catch(async (e) => {
+        console.error(e)
+        await prisma.$disconnect()
+        process.exit(1)
+    })
+app.listen(5000, () =>{console.log("Started. Port 5000")});
