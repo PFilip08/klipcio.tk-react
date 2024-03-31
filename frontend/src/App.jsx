@@ -7,6 +7,7 @@ import Sites from "./pages/ads/Sites";
 import Servers from "./pages/ads/Servers";
 import Banners from "./pages/ads/Banners";
 import NotFound from "./pages/404";
+import About from "./pages/About.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Routes>
           <Route path={"*"} element={<NotFound />} />
           <Route path={"/"} element={<Home />} />
+          <Route path={"/about"} element={<About />} />
           <Route path={"/reklamy/bots"} element={<Bots />} />
           <Route path={"/reklamy/sites"} element={<Sites />} />
           <Route path={"/reklamy/servers"} element={<Servers />} />

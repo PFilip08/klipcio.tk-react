@@ -1,5 +1,12 @@
+import Reklamies from "../../components/apiFecz/reklamies.jsx";
+
 const Servers = () => {
-    return <p>Hello Servers</p>;
+    return (
+        <>
+            <h1 className={"page_title"}>Reklamy serwerów.</h1>
+            <Reklamies collection={'servers'}/>
+        </>
+    );
 }
 
 export default Servers;
